@@ -1,0 +1,10 @@
+<?php
+// Job Lister Free Version - https://www.netartmedia.net/job-lister
+// A software product of NetArt Media, All Rights Reserved
+// The following source codes are obfuscated / made difficult to edit. 
+// When upgrading to Job Lister PRO, you get the full non-obfuscated source codes 
+// and also extra features - please find details on:
+// https://www.netartmedia.net/job-lister#pro
+// Find out more PHP scripts and ready-made website systems on:
+// https://www.netartmedia.net/products
+?><?php if(isset($_POST["proceed_save"])) { $tmusuv=stripslashes(stripslashes($_POST["blog_categories"])); if(!preg_match("/[0-9]+/", $tmusuv)) { $xobkinj=""; $mvdt = explode("\n",$tmusuv); $lkeftj=1; foreach($mvdt as $gvrkx) { $xobkinj.=$lkeftj.". ".trim($gvrkx)."\n"; $lkeftj++; } $tmusuv=trim($xobkinj); } $tmusuv=str_replace("\t","",$tmusuv); $tmusuv=str_replace(" "," ",$tmusuv); $oeaci = true; $qlgzxug = fopen('../include/categories.php', 'w'); fwrite($qlgzxug, trim($tmusuv)); fclose($qlgzxug); if($oeaci) { ?> <h3><?php echo $this->fjod["categories_saved_success"];?></h3><br/> <?php } } $this->eezru($this->fjod["job_categories"]); ?> <div class="card"> <br/> <div class="header"> <h4 class="title"><?php echo $this->fjod["set_job_categories"];?></h4> </div> <div class="content add-padding"> <form action="index.php" method="post"> <input type="hidden" name="page" value="categories"/> <input type="hidden" name="proceed_save" value="1"/> <div class="row"> <div class="col-md-8"> <div class="form-group"> <label><?php echo $this->fjod["blog_categories"];?></label> <?php $qfyqs = file('../include/categories.php'); $zmntqj = ""; foreach ($qfyqs as $aqtto => $xwacz) { $zmntqj .= $xwacz; } ?> <textarea type="text" cols="40" rows="10" id="blog_categories" name="blog_categories" class="form-control border-input"><?php echo $zmntqj;?></textarea> </div> </div> </div> <div class="clearfix"></div> <br/> <button type="submit" class="btn btn-primary btn-fill btn-wd"><?php echo $this->fjod["save"];?></button> <div class="clearfix"></div> <br/> <br/> </form> </div> </div> <div class="clearfix"></div> <br/>

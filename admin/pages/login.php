@@ -1,0 +1,10 @@
+<?php
+// Job Lister Free Version - https://www.netartmedia.net/job-lister
+// A software product of NetArt Media, All Rights Reserved
+// The following source codes are obfuscated / made difficult to edit. 
+// When upgrading to Job Lister PRO, you get the full non-obfuscated source codes 
+// and also extra features - please find details on:
+// https://www.netartmedia.net/job-lister#pro
+// Find out more PHP scripts and ready-made website systems on:
+// https://www.netartmedia.net/products
+?><?php if(!defined('IN_LOGIN_SCRIPT')) die(""); ?> <div class="header-line"> <div class="container"> <h3><?php echo $this->fjod["admin_panel"];?></h3> </div> </div> <div class="container"> <br/> <div class="row"> <div class="col-md-7"> <br/> <form id="main" action="login_action.php" method="post"> <fieldset> <legend><?php echo $this->fjod["login_to_continue"];?></legend> <ol> <li> <label><?php echo $this->fjod["username"];?></label> <input type="text" name="username" value=""/> </li> <li> <label><?php echo $this->fjod["password"];?></label> <input type="password" name="password" value=""/> </li> <ol> </fieldset> <div class="clearfix"></div> <br/> <button type="submit" class="btn btn-primary pull-right"><?php echo $this->fjod["login"];?></button> <div class="clearfix"></div> </form> <br/> <br/> </div> <div class="col-md-5"> <br/> <div class="slideshow-wrap"> <div id="slideshow"> <?php $rzxkyez = $this->phia(); foreach($rzxkyez->vlmm as $vlmm) { ?> <div> <?php echo $vlmm->itbmh;?> </div> <?php } foreach($rzxkyez->vlmm as $vlmm) { ?> <div> <?php echo $vlmm->itbmh;?> </div> <?php } ?> <div> </div> <div class="clearfix"></div> </div> </div> <script> $(document).ready(function() { $("#slideshow > div:gt(0)").hide(); setInterval(function() { $('#slideshow > div:first') .fadeOut(1000) .next() .fadeIn(1000) .end() .appendTo('#slideshow'); }, 10000); }); </script> </div> </div> <br/> <br/> </div>
