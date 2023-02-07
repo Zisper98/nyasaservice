@@ -1,0 +1,10 @@
+<?php
+// Job Lister Free Version - https://www.netartmedia.net/job-lister
+// A software product of NetArt Media, All Rights Reserved
+// The following source codes are obfuscated / made difficult to edit. 
+// When upgrading to Job Lister PRO, you get the full non-obfuscated source codes 
+// and also extra features - please find details on:
+// https://www.netartmedia.net/job-lister#pro
+// Find out more PHP scripts and ready-made website systems on:
+// https://www.netartmedia.net/products
+?><?php class SecurityImage { var $abgcu; var $flqhvup; var $vjjg; var $ejtdqu; var $gxcbevq; var $uxxfu; var $dglku; function __construct($flqhvup = 150, $vjjg = 30, $ejtdqu = 5, $gxcbevq = 30) { $this->flqhvup = $flqhvup; $this->vjjg = $vjjg; $this->ejtdqu = $ejtdqu; $this->gxcbevq = $gxcbevq; $this->abgcu = imagecreate($flqhvup, $vjjg); imagecolorallocate($this->abgcu, 255, 255, 255); $this->uxxfu = (int)($this->flqhvup / $this->ejtdqu); } function nwzzbkr() { for ($i = 0; $i < $this->gxcbevq; $i++) { $aboohi = rand(230, 250); $kjgy = imagecolorallocate($this->abgcu, $aboohi, $aboohi, $aboohi); imageline($this->abgcu, rand(0, $this->flqhvup), rand(0, $this->vjjg), rand(0, $this->flqhvup), rand(0, $this->vjjg), $kjgy); } } function kzhkx() { $this->dglku = ''; for ($i = 0; $i < $this->ejtdqu; $i++) { $this->dglku .= chr(rand(48, 57)); } } function ebnfqe() { for ($i = 0; $i < strlen($this->dglku); $i++) { $bfcr = 4; $aboohi = rand(0, 128); $ieffhhb = imagecolorallocate($this->abgcu, 255,0, 0); imagestring($this->abgcu, $bfcr, $this->uxxfu / 3 + $i * $this->uxxfu, ($this->vjjg - imagefontheight($bfcr)) / 2, $this->dglku[$i], $ieffhhb); } } function rdetm($xukqoqk = '') { if (!function_exists('imagegif')) { return false; } $this->nwzzbkr(); $this->kzhkx(); $this->ebnfqe(); if ($xukqoqk != '') { imagegif($this->abgcu, $xukqoqk); } else { header('Content-type: image/gif'); imagegif($this->abgcu); } imagedestroy($this->abgcu); return true; } function ozhcib() { return $this->dglku; } } ?>
