@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<blog>
+	<information>
+		<blog_logo/>
+		<blog_logo_text>Nyasa Services</blog_logo_text>
+		<intro_content>custom</intro_content>
+		<intro_title>Find a service provider here</intro_title>
+		<intro_text>Please log in to the admin panel to post a job ...</intro_text>
+		<intro_background>1</intro_background>
+		<footer_text>This application was designed by Shepherd Zisper Phiri&#13;
+0889612323</footer_text>
+		<default_title>Nyasa Services</default_title>
+		<default_description>Home of all Service Providers.</default_description>
+		<default_keywords/>
+		<facebook_url/>
+		<linkedin_url/>
+		<twitter_url/>
+		<instagram_url/>
+	</information>
+</blog>
