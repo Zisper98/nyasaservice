@@ -1,0 +1,159 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.header .search {
+    display: flex;
+    align-items: center;
+}
+
+.header .search input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.header .search button {
+    padding: 5px;
+    border: none;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #444;
+    color: #fff;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    margin: 0;
+}
+
+.nav ul li a {
+    display: block;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav ul li a.active,
+.nav ul li a:hover {
+    background-color: #555;
+}
+
+.main {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.highlight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.highlight img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.highlight h2 {
+    margin: 0;
+}
+
+.categories .category {
+    margin-bottom: 20px;
+}
+
+.categories .category h3 {
+    margin: 0 0 10px 0;
+}
+
+.cards {
+    display: flex;
+    overflow-x: auto;
+}
+
+.cards .card {
+    flex: 0 0 150px;
+    margin-right: 10px;
+}
+
+.cards .card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cards .card p {
+    text-align: center;
+    font-size: 14px;
+    margin: 5px 0 0 0;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.footer nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
